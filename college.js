@@ -9,4 +9,4 @@
 //  ) 
 
 // create html element using dom
-console.log( document.createElement('div'));
+console.log( document.createElement('div'))
