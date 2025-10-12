@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="a" type="number" placeholder="Num 1">
+  <input id="b" type="number" placeholder="Num 2">
+  <button onclick="add()">Add</button>
+  <h2 id="res"></h2>
+
+  <script>
+    function add() {
+      let sum = Number(a.value) + Number(b.value);
+      let colors = ["red","green","blue","orange","purple"];
+      res.style.color = colors[Math.floor(Math.random()*colors.length)];
+      res.innerHTML = "Sum = " + sum;
+    }
+  </script>
+</body>
+</html>
