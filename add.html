@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="a" type="number" placeholder="Num 1">
+  <input id="b" type="number" placeholder="Num 2">
+  <button onclick="add()">Add</button>
+  <h2 id="res" style="color:blue;"></h2>
+
+  <script>
+    function add() {
+      let sum = Number(a.value) + Number(b.value);
+      res.innerHTML = "Sum = " + sum;
+    }
+  </script>
+</body>
+</html>
