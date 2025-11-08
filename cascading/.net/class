@@ -1,0 +1,31 @@
+using System;
+
+class EmployeeSalary
+{
+    static void Main()
+    {
+        // Array to store the salaries of 10 employees
+        double[] salaries = new double[10];
+
+        Console.WriteLine("Enter the salary of 10 employees:");
+
+        // Using for loop to take input
+        for (int i = 0; i < salaries.Length; i++)
+        {
+            Console.Write($"Enter salary of employee {i + 1}: ");
+            salaries[i] = Convert.ToDouble(Console.ReadLine());
+        }
+
+        Console.WriteLine("\nDisplaying Salaries of Employees:");
+
+        // Using foreach loop to display the salaries
+        int count = 1;
+        foreach (double salary in salaries)
+        {
+            Console.WriteLine($"Employee {count}: {salary}");
+            count++;
+        }
+
+        Console.WriteLine("\nSalary calculation completed.");
+    }
+}
